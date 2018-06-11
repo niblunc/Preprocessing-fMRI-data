@@ -21,7 +21,7 @@ fmriprep Experiments/Bevel/Bevel Experiments/Bevel/$i \
     --fs-no-reconall \
     --omp-nthreads 16 --n_cpus 32 --low-mem \
     --ignore slicetiming  \
-    --t2s-coreg --bold2t1w-dof 12 \
+    --bold2t1w-dof 12 \
     --output-space T1w --template MNI152NLin2009cAsym \
     --debug \
     -w Experiments/Bevel/$i/intermediate_results --resource-monitor --write-graph --stop-on-first-crash

@@ -54,7 +54,7 @@ else
       exit
     else
       read -p "Enter unique dicom path: " dicom_path
-      REPLACE="\{subject\}"
+      REPLACE='{subject}'
       dcm_path=${dicom_path//$study_name/$REPLACE}
 
       read -p "Enter output directory path: " output_directory
