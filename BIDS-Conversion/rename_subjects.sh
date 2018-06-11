@@ -13,10 +13,10 @@ then
 fi
 
 if [ ! -e "$path" ]
-thenssh
+then
   echo "file path doesn't exist"
 else
-  echo "Starting Program:"ls
+  echo "Starting Program:"
   cd $path # go to input path
 
   read -p "Enter Experiment Name: " experiment
@@ -24,8 +24,8 @@ else
   read -p "Enter subject keyword: " keyword
 
   subjects=(${keyword})
-
-  count=0
+  read -p "Enter the count: " COUNT
+  count=$COUNT
 
   for sub in ${subjects[@]}; do
     count=$((count+1))
